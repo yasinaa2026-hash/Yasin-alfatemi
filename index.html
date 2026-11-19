@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Yasin Alfatemi — personal developer portfolio, projects, learning journey and web experiments.">
   <meta name="theme-color" content="#07182e">
+  <meta property="og:url" content="https://yasinaa2026-hash.github.io/Yasin-alfatemi/">
+  <meta property="og:image" content="https://yasinaa2026-hash.github.io/Yasin-alfatemi/assets/yasin-alfatemi.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <meta property="og:title" content="Yasin Alfatemi | ياسين الفاطمي">
   <meta property="og:description" content="اللهم صل وسلم على سيدنا محمد، والسلام عليكم">
   <meta property="og:type" content="website">
@@ -118,10 +121,7 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script>
-    fetch('assets/yasin-avatar.jpg.b64')
-      .then(response => { if (!response.ok) throw new Error('Profile image unavailable'); return response.text(); })
-      .then(encoded => { document.getElementById('profilePortrait').src = 'data:image/jpeg;base64,' + encoded.trim(); })
-      .catch(() => {});
+    document.getElementById('profilePortrait').src = 'assets/yasin-alfatemi.jpg';
   </script>
   <script src="script.js"></script>
 </body>
